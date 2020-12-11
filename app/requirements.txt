@@ -1,0 +1,9 @@
+fastapi
+fastapi-sqlalchemy
+fastapi_migrations
+alembic
+pydantic
+starlette
+psycopg2
+uvicorn
+python-dotenv
