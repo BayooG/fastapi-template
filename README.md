@@ -1,6 +1,6 @@
-# fastapi_sqlalchemy_alembic
+# Second Opinion Backend
 
-This repo is used as a part of a tutorial to show how to use Fastapi and pydantic with Sqlalchemy, postgresql, Alembic(for migrations).
+This repo uses Fastapi and pydantic with Sqlalchemy, postgresql, Alembic(for migrations).
 
 The full article is published on medium [here](https://medium.com/@ahmed.nafies/fastapi-with-sqlalchemy-postgresql-and-alembic-and-of-course-docker-f2b7411ee396)
 
@@ -20,7 +20,3 @@ and go to:
 
     swagger - http://localhost:8000/docs
     redoc - http://localhost:8000/redoc
-
-## Pgadmin4
-
-    http://localhost:5050
