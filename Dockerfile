@@ -12,18 +12,17 @@ RUN pip install poetry && poetry install --no-root
 
 RUN apt-get update && apt-get install -y postgresql-client
 
-COPY ./ /app
+COPY ./service /app/service
 
-# COPY scripts/ /app/scripts/
+COPY scripts/ /app/scripts/
 
-# COPY alembic.ini poetry.lock  /app/
+COPY alembic.ini /app/
 
-# COPY tests/  /app/tests/
+RUN chmod -R +x /app/scripts
 
-# COPY seed/  /app/scripts/seed/
 
-# RUN chmod -R +x /app/scripts/
+ENTRYPOINT ["/app/scripts/docker-start.sh"]
 
-# ENTRYPOINT ["/app/scripts/docker-start.sh"]
 
-ENTRYPOINT ["python","/app/main.py"]
+
+

@@ -11,8 +11,13 @@ sqlmodel = "^0.0.14"
 fastapi = "^0.109.0"
 uvicorn = "^0.26.0"
 alembic = "^1.13.1"
+fastapi-utilities = "^0.2.0"
+psycopg2-binary = "^2.9.9"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+migrate = "alembic:main"
